@@ -1,0 +1,37 @@
+{
+  "name": "pkl-report-system",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 3000",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1 --port 3000",
+    "lint": "eslint",
+    "db:migrate": "node scripts/run-supabase-schema.mjs",
+    "user:demo": "node scripts/create-demo-user.mjs"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.29.7",
+    "@supabase/ssr": "^0.8.0",
+    "@supabase/supabase-js": "^2.88.0",
+    "bootstrap": "^5.3.8",
+    "es-toolkit": "^1.47.0",
+    "jspdf": "^3.0.4",
+    "jspdf-autotable": "^5.0.2",
+    "lucide-react": "^0.562.0",
+    "next": "^16.2.2",
+    "pg": "^8.21.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "recharts": "^3.6.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.2.2",
+    "typescript": "^5.9.3"
+  }
+}
