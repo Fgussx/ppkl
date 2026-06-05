@@ -28,6 +28,14 @@ where email = 'email-admin@example.com';
 
 Admin mengelola provider AI di `/admin/ai`. API key disimpan terenkripsi dan hanya dipakai di server.
 
+## Deploy ke Vercel
+
+Project ini adalah aplikasi Next.js, jadi Vercel harus memakai Framework Preset `Next.js`.
+
+- Build Command: `npm run build`
+- Output Directory: `.next` atau kosongkan agar Vercel memakai default Next.js
+- Jangan set Output Directory ke `public`, karena folder itu hanya untuk static assets dan bukan hasil build aplikasi ini.
+
 ## PostgreSQL
 
 Supabase sudah memakai PostgreSQL. Untuk Supabase, gunakan `supabase/schema.sql`.
